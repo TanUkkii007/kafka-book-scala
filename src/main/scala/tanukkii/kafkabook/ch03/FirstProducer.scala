@@ -32,4 +32,5 @@ object FirstProducer extends App with CallbackConversion {
   })
 
   Thread.sleep(1000)
+  producer.close()
 }

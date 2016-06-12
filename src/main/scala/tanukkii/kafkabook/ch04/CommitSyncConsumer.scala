@@ -27,10 +27,12 @@ object CommitSyncConsumer extends App {
         customerCountryMap = customerCountryMap.updated(record.value(), customerCountryMap.getOrElse(record.value(), 0) + 1)
         println(customerCountryMap)
       }
-      try {
-        consumer.commitSync()
-      } catch {
-        case e: CommitFailedException => e.printStackTrace()
+      if (!records.isEmpty) {
+        try {
+          consumer.commitSync()
+        } catch {
+          case e: CommitFailedException => e.printStackTrace()
+        }
       }
     }
   } finally {

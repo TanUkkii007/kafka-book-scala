@@ -1,4 +1,4 @@
-package tanukkii.kafkabook.ch03.tanukkii.kafkabook.util
+package tanukkii.kafkabook.util
 
 import org.apache.kafka.clients.producer.{RecordMetadata, Callback}
 

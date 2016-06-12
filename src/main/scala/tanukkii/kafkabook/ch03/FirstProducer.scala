@@ -1,6 +1,6 @@
 package tanukkii.kafkabook.ch03
 
-import _root_.tanukkii.kafkabook.ch03.tanukkii.kafkabook.util.CallbackConversion
+import _root_.tanukkii.kafkabook.util.CallbackConversion
 import org.apache.kafka.clients.producer.{RecordMetadata, ProducerRecord, KafkaProducer}
 import scala.collection.JavaConverters._
 

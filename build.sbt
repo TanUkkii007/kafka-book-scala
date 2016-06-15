@@ -10,7 +10,9 @@ resolvers += "confluent" at "http://packages.confluent.io/maven/"
 
 libraryDependencies ++= Seq(
   "org.apache.kafka" %% "kafka" % kafkaVersion,
+  "org.apache.kafka" % "kafka-streams" % kafkaVersion,
   "org.apache.avro" % "avro" % avroVersion,
   "org.apache.avro" % "avro-tools" % avroVersion % "test",
-  "io.confluent" % "kafka-avro-serializer" % confluentVersion
+  "io.confluent" % "kafka-avro-serializer" % confluentVersion,
+  "io.spray" %%  "spray-json" % "1.3.2"
 )

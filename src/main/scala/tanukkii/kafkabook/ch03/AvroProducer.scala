@@ -25,4 +25,6 @@ object AvroProducer extends App {
     producer.send(record)
   }
 
+  producer.close()
+
 }
